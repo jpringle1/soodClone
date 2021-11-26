@@ -3,14 +3,6 @@
     font-family: 'Montserrat-bold', sans-serif;
 }
 
-.values{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top:10rem;
-    padding-bottom:10rem;
-}
-
 a {
     color:white;
     text-decoration: none; /* no underline */
@@ -19,17 +11,6 @@ a {
 
 body {
     margin:0;
-}
-
-.row-boxes{
-    margin-left: 10px;
-    margin-right: 10px;
-    border-bottom: solid white;
-}
-
-.rowBoxes2{
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 h1{
@@ -57,104 +38,49 @@ ul {
 p {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 18px;
-}
-
-.temp1 {
-    display: flex;
-}
-
-
-.temp2 {
-    display: flex;
-    width: 100%;
-
-}
-
-.temp3 {
-    flex-wrap: nowrap;
-}
-
-.temp4 {
-    font-size: 125px;
-}
-
-.temp5 {
-    font-size: 24px;
-}
-
-.temp6 {
-    font-size: 60px;
-    padding-top:2rem;
-    margin-top:0;
-}
-
-.temp7 {
     font-size: 20px;
     font-weight: 400;
 }
 
-.row {
-    display:flex;
-}
-
-.alignCenter{
+.values{
     display: flex;
-    align-items: center;
-}
-
-.between{
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    margin-top:10rem;
+    padding-bottom:10rem;
 }
 
-.around{
-    justify-content: space-around;
+.valueBoxes{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: solid white;
+}
+
+.rowBoxes{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.valueMain {
+    font-size: 125px;
+}
+
+.valueSub {
+    font-size: 24px;
 }
 
 .padding2 {
     margin-left: 10px;
+    transition:background 0.5s
 }
 
-.alignEnd {
-    justify-content: flex-end;
+.padding2:hover {
+    background: #e61878;
 }
-
-.alignStart {
-    justify-content: flex start;
-}
-
-.margin2 {
-    margin-top: 19.92px;
-    margin-bottom: 19.92px;
-}
-
 .invert{
     background:#1F1E29;   
     color: white;
-}
-
-.pageMargin {
-    margin-left:8px;
-    margin-right:8px
-}
-
-.nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index:1;
-  }
-
-
-.navHeight {
-    padding: 12px 0px 12px 0px;
-}
-
-.margin3{
-    padding-top: 10rem; 
-    margin-bottom: 1.5rem;
 }
 
 .buttonSize {
@@ -175,28 +101,33 @@ p {
     max-width: 1364px;
 }
 
+#topButton{
+    background:#1F1E29;   
+    color: white;
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 0.65px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px 56px 10px 56px;
+    cursor:pointer;
+    transition: background 0.5s;
 
-.noMargin{
-    margin: 0 0 0 0;
-    padding:0 0 0 0;
-    border:0 0 0 0;
 }
 
-.imageContainer {
-    width:100%; 
-    background-image: url("res/banner1.webp");
+#topButton:hover{
+    background: #E61878;
 }
 
-#bannerHeight {
-    height: 220px;
+
+.button2{
+    border: 2px solid #1F1E29;
 }
 
-.bannerFontH2 {
-    font-size: 72px;
-    width: 59.491%;
-}
 
-.bannerButton {
+
+#bannerButton {
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 1.4px;
@@ -207,51 +138,67 @@ p {
     cursor:pointer;
 }
 
-.bannerMargin{
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    max-width: 1700px;
-}
-
-.aboutUs{
-    color: #E61878;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-
-    width: auto;
-    margin-bottom: 0;
-    max-width: 100%;
-}
-
-.temp8{
+#between{
+    justify-content: space-between;
     align-items: center;
 }
 
-.temp9{
-    align-content: center;
-align-items: center;
-display: flex;
-position: relative;
-width: 100%;
-flex-wrap: wrap;
-margin: 20px 100px 20px 60px;
-padding: 30px;
+#figuresText{
+    padding-bottom:2rem;
+    font: white;
 }
 
-.font3{
+#ourServices{
+    font-size: 56px;
+    font-weight: 500;
+    color: #EB0F78;
+}
+
+#whatWeDo {
+    color: #1F1E29;
+    font-size: 125px;
+    font-weight: 700;
+    letter-spacing: -5px;
+
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+#hoverOverMe {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+}
+
+#whiteOnPink{
+    background-color:#EB0F78;
+    font: white ;
+}
+
+#aboutUsSection{
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px 100px 20px 60px;
+    padding: 30px;
+}
+
+#sh1{
     font-size: 48px;
     font-weight: 700;
 }
 
-.pFont2{
+#p2{
     font-size: 24px;
-font-weight: 400;
-line-height: 28px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
-.clickHere {
+#clickHere {
     background-color:   #1F1E29;
     padding: 15px;
     border: 1px solid rgba(0,0,0,.02);
@@ -263,45 +210,66 @@ line-height: 28px;
     width:100%
 }
 
-.button2{
-    border: 2px solid #1F1E29;
+#bannerMargin{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 1700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.temp10{
-    padding-bottom:2rem;
+#aboutUs{
+    color: #E61878;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    width: auto;
+    margin-bottom: 0;
+    max-width: 100%;
 }
 
-.ourServices{
-    font-size: 56px;
-    font-weight: 500;
-    color: #EB0F78;
+#imageContainer {
+    width:100%; 
+    background-image: url("res/banner1.webp");
 }
 
-.whatWeDo {
-    color: #1F1E29;
-    font-size: 125px;
-    font-weight: 700;
-    letter-spacing: -5px;
-
-    padding: 0;
-    margin: 0;
-    line-height: 1;
+#bannerHeight {
+    height: 220px;
 }
 
-.hoverOverMe {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -0.8px;
-
-
-
+#bannerFontH2 {
+    font-size: 72px;
+    width: 59.491%;
 }
 
-.pink{
-    background-color:#EB0F78;
+#nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:1;
+  }
+ 
+#navHeight {
+    padding: 12px 0px 12px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.white{
-    font: white ;
+#margin3{
+    padding-top: 10rem; 
+    margin-bottom: 1.5rem;
+}
+
+#margin2 {
+    margin-top: 19.92px;
+    margin-bottom: 19.92px;
+    display:flex;
+}
+
+#row {
+    display: flex;
 }
